@@ -8,6 +8,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class BugsnagConsoleApplication extends Application
 {
+	protected $bugsnag;
+	
 	public function __construct(KernelInterface $kernel)
 	{
 		parent::__construct($kernel);
